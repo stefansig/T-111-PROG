@@ -7,6 +7,5 @@ while num_int >= 0:
     if max_int <= num_int:
         max_int = num_int
 
-# Fill in the missing code
 
 print("The maximum is", max_int)    # Do not change this line
