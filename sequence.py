@@ -1,15 +1,15 @@
-n = int(input("Enter the length of the sequence: ")) # Do not change this line
-numer1 = 1
-numer2 = 2
-numer3 = 3
-numer4 = 0
-print(1)
-print(2)
-print(3)
+def fibo(n):
+    
+    first = 0
+    second = 1
+    print(second, end=' ')
 
-for x in range(n-3):
-    numer4 = numer2 + numer3 + numer1
-    print(numer4)
-    numer1 = numer2
-    numer2 = numer3
-    numer3 = numer4
+    for i in range(2,n+1):
+        current = first + second
+        print(current, end= ' ')
+        first = second
+        second = current
+
+n = int(input("Input the length of Fibonacci sequence (n>=1): "))
+fibo(n)
+        

@@ -1,11 +1,9 @@
-num_int = 0
-max_int = 0
-
-
-while num_int >= 0:
-    num_int = int(input("Input a number: "))    # Do not change this line
-    if max_int <= num_int:
-        max_int = num_int
-
-
-print("The maximum is", max_int)    # Do not change this line
+n = 101  
+su = 0  
+for i in range(1, n):  
+    for j in range(1, int(i)):  
+        if (i % j == 0):  
+            su = su + j  
+    if (su > i):  
+        print( i)  
+    su = 0
